@@ -1,0 +1,348 @@
+
+/******************* IMPORTAÇÕES *******************/
+
+@font-face {
+    font-family: f1;
+    src: url(../fonts/f1-Regular.otf);
+    font-weight: 400
+}
+
+@font-face {
+    font-family: f1;
+    src: url(../fonts/f1-Bold.otf);
+    font-weight: 700
+}
+
+/******************* IMPORTAÇÕES *******************/
+
+
+/******************* VARIÁVEIS *******************/
+
+:root {
+	--cor-principal: #1a1a1a;
+	--cor-secundária: #ffffff;
+	--cor-terciaria: #fe1e02;
+	--cor-quarta: #000000;
+
+	--fonte-primaria: f1;
+
+	--botao-github: #532f9d;
+    --botao-github-efeito: #8363c5;
+
+}
+
+/******************* VARIÁVEIS *******************/
+
+
+
+/************* CONFIGURAÇÕES DEFAULT *************/
+
+body {
+	background-color: var(--cor-principal);
+	color: var(--cor-secundária);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	font-family: var(--fonte-primaria);
+	font-weight: 700;
+}
+
+h2 {
+	font-family: var(--fonte-primaria);
+	font-weight: 700;	
+	color: var(--cor-terciaria);
+}
+
+p {
+	font-family: var(--fonte-primaria);
+	font-weight: 400;	
+	color: var(--cor-secundária);	
+}
+
+a {
+	font-family: var(--fonte-primaria);
+	font-weight: 400;	
+	color: var(--cor-secundária);		
+}
+
+/************* CONFIGURAÇÕES DEFAULT *************/
+
+
+
+/******************* CABEÇALHO *******************/
+
+.cabecalho {
+	padding: 2em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	position: fixed;
+	z-index: 1000;
+	background-color: var(--cor-principal);
+}
+
+.cabecalho__menu {
+	width: 100%;
+	align-items: center;
+}
+
+.cabecalho__menu__link {
+	padding: 1em;
+	text-decoration: none;
+}
+
+.cabecalho__menu__link_center {
+	padding: 1em;
+	text-decoration: none;
+	border-left: var(--cor-secundária) solid 2px;
+	border-right: var(--cor-secundária) solid 2px;
+}
+
+.cabecalho__menu__link_center:hover {
+	color: var(--cor-terciaria);
+}
+
+.cabecalho__menu__link:hover {
+	color: var(--cor-terciaria);
+}
+
+
+/******************* CABEÇALHO *******************/
+
+
+
+
+/******************* CONTEÚDO *******************/
+
+.banner {
+	height: 80vh;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	background: url('../assets/banner.jpg') no-repeat;
+	background-position: 20% 50%; 
+	background-attachment: fixed;
+	background-size: 100%;
+}
+
+.banner__titulo {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-family: var(--fonte-primaria);
+	font-weight: 700;
+	background-color: var(--cor-terciaria);
+	padding: 2em 4em;
+	border-radius: 16px;
+}
+
+.sessaozero__titulo {
+	margin: 2em;
+}
+.sessao1 {
+	display: flex;
+	justify-content: space-around;
+	margin: 5em 2em;
+}
+
+.resumo__pilotos__nacionalidade {
+	font-weight: 700;
+}
+
+.resumo__pilotos_gp {
+	border: var(--cor-secundária) solid 2px;
+	border-radius: 16px;
+	padding: 2em;
+	margin: 1em;
+	transition: 400ms;
+}
+
+.resumo__pilotos_gp:hover {
+	background-color: var(--cor-secundária);
+	border-bottom: var(--cor-terciaria) solid 6px;
+	cursor: pointer;
+	padding: 2.5em;
+	transition: 400ms;
+}
+
+.resumo__pilotos__nacionalidade {
+	color: var(--cor-principal);
+}
+
+.resumo__pilotos__data {
+	color: var(--cor-principal);
+} 
+
+.fotos_pilotos {
+	width: 470px;
+}  
+
+/* Estilos do Lightbox */
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+  z-index: 999;
+}
+
+.lightbox-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+  max-width: 600px;
+}
+
+.lightbox h1 {
+  font-size: 24px;
+}
+
+.lightbox p {
+  font-size: 16px;
+}
+
+.lightbox-close {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.lightbox-close:hover{
+	background-color: var(--cor-terciaria);
+}
+
+/* Estilos do Lightbox */
+
+
+.sessao3 {
+	margin: 5em 20em;
+}
+
+.carros__carrossel__titulo {
+	margin: 2em;
+	color: var(--cor-secundária);
+}
+
+/* Estilos Carrossel Carros */
+
+.carros__carrossel__fotos {
+	width: 100%;
+}
+
+.carros__carrossel__fotos__titulo {
+	text-align: center;
+	padding: 2em 0;
+}
+
+.swiper-button-prev, .swiper-button-next {
+	color: var(--cor-terciaria);
+}
+
+.swiper-pagination{
+	display: none;
+}
+
+
+
+/******************* CONTEÚDO *******************/
+
+
+
+/******************** RODAPÉ ********************/
+
+.rodape {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: var(--cor-secundaria);
+	background-color: var(--cor-quarta);
+	padding: 75px 0 75px 0;
+	text-align: center;
+	font-family: var(--fonte-primaria);
+	font-weight: 400;
+}
+
+.rodape__logo {
+	width: 5%;
+	margin: 0 0 25px 0;
+}
+
+.rodape__botao__dev {
+	width: 25%;
+    border-radius: 8px;
+    padding: 0.5em;
+    background-color: var(--botao-github);
+    color: var(--branco-principal);
+    text-decoration: none;
+    display: block;
+    margin-bottom: 1em;
+    transition: 600ms;
+    margin: 20px 0;
+}
+
+.rodape__botao__dev:hover {
+    background-color: var(--botao-github-efeito);
+    transition: 600ms;
+}
+
+/******************** RODAPÉ ********************/
+
+
+
+
+/******************** MOBILE ********************/
+
+@media screen and (max-width: 1024px) {
+	.cabecalho {
+		padding: 2em 0;
+	}
+
+	.banner {
+		background: none;
+		background-color: var(--cor-terciaria);
+		height: 30vh;
+		align-items: end;
+		padding: 2em 0;
+	}
+
+	.banner__titulo {
+		background-color: transparent;
+	}
+
+	.sessao1 {
+		display: block;
+		margin: 4em 0.5em;
+	}
+
+	.resumo__pilotos_gp {
+		margin: 1em 0;
+	}
+
+	.sessao3 {
+		margin: 1em;
+	}
+
+	.rodape__botao__dev {
+		width: 80%;
+	}
+}
+
+
+/******************** MOBILE ********************/

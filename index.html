@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta name="author" content="Cardoso">
+        <meta name="description" content="Portal brasileiro com informações sobre a temporada de 2023 da Fórmula 1.">
+        <meta name="keywords" content="html5, css3, wordpress, javascript, react">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+
+        <link rel="stylesheet" href="./styles/style.css">
+
+        <title>Hub da F1</title>
+    </head>
+
+    <body>
+        <header class="cabecalho" id="cabecalho">
+            <nav>
+                <ul class="cabecalho__menu">
+                    <il><a class="cabecalho__menu__link" href="#banner">Início</a></il>
+                    <il><a class="cabecalho__menu__link_center" href="#pilotos">Pilotos</a></il>
+                    <il><a class="cabecalho__menu__link" href="#carros">Carros</a></il>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="banner" id="banner">
+                <div class="banner__titulo">
+                    <h1 class="banner__subtitulo">Hub da F1</h1>
+                    <p class="banner__descricao">Temporada de 2023</p>
+                </div>
+            </section>
+            <section class="sessaozero" id="pilotos">
+                <h1 class="sessaozero__titulo">Conheça os Pilotos</h1>
+            </section>    
+            <section class="sessao1">          
+                <div class="resumo1">
+                    <div class="resumo__pilotos">
+                        <div class="resumo__pilotos_card">
+                            <div class="resumo__pilotos_gp" onclick="openLightbox('lightbox1')">
+                                <h2 class="resumo__pilotos__titulo">Max Verstappen</h2>                                         
+                            </div>
+                            <div class="lightbox" id="lightbox1">
+                              <div class="lightbox-content">
+                                <img src="./assets/pilotos/max.jpg" class="fotos_pilotos" alt="Foto do Max Verstappen">
+                                <h2 class="resumo__pilotos__titulo">Max Verstappen</h2>
+                                <p class="resumo__pilotos__nacionalidade">Holanda</p>
+                                <p class="resumo__pilotos__data">RedBull Racing</p>        
+                                <button class="lightbox-close" onclick="closeLightbox('lightbox1')">Fechar</button>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="resumo__pilotos_card">
+                            <div class="resumo__pilotos_gp" onclick="openLightbox('lightbox2')">
+                                <h2 class="resumo__pilotos__titulo">Sergio Pérez</h2>                                         
+                            </div>
+                            <div class="lightbox" id="lightbox2">
+                              <div class="lightbox-content">
+                                <img src="./assets/pilotos/perez.jpg" class="fotos_pilotos" alt="Foto do Sergio Pérez">
+                                <h2 class="resumo__pilotos__titulo">Sergio Pérez</h2>
+                                <p class="resumo__pilotos__nacionalidade">México</p>
+                                <p class="resumo__pilotos__data">RedBull Racing</p>      
+                                <button class="lightbox-close" onclick="closeLightbox('lightbox2')">Fechar</button>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="resumo__pilotos_card">
+                            <div class="resumo__pilotos_gp" onclick="openLightbox('lightbox3')">
+                                <h2 class="resumo__pilotos__titulo">Fernando Alonso</h2>                                      
+                            </div>
+                            <div class="lightbox" id="lightbox3">
+                              <div class="lightbox-content">
+                                    <img src="./assets/pilotos/alonso.jpg" class="fotos_pilotos" alt="Foto do Fernando Alonso">
+                                    <h2 class="resumo__pilotos__titulo">Fernando Alonso</h2>
+                                    <p class="resumo__pilotos__nacionalidade">Espanha</p>
+                                    <p class="resumo__pilotos__data">Aston Martin</p>         
+                                    <button class="lightbox-close" onclick="closeLightbox('lightbox3')">Fechar</button>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="resumo__pilotos_card">
+                            <div class="resumo__pilotos_gp" onclick="openLightbox('lightbox4')">
+                                <h2 class="resumo__pilotos__titulo">Lewis Hamilton</h2>                                      
+                            </div>
+                            <div class="lightbox" id="lightbox4">
+                              <div class="lightbox-content">
+                                    <img src="./assets/pilotos/hamilton.jpg" class="fotos_pilotos" alt="Foto do Lewis Hamilton">
+                                    <h2 class="resumo__pilotos__titulo">Lewis Hamilton</h2>
+                                    <p class="resumo__pilotos__nacionalidade">Reino Unido</p>
+                                    <p class="resumo__pilotos__data">Mercedes</p>        
+                                    <button class="lightbox-close" onclick="closeLightbox('lightbox4')">Fechar</button>
+                              </div>
+                            </div>
+                        </div>                        
+                        <div class="resumo__pilotos_card">
+                            <div class="resumo__pilotos_gp" onclick="openLightbox('lightbox5')">
+                                <h2 class="resumo__pilotos__titulo">Carlos Sainz</h2>                                     
+                            </div>
+                            <div class="lightbox" id="lightbox5">
+                              <div class="lightbox-content">
+                                <img src="./assets/pilotos/sainz.jpg" class="fotos_pilotos" alt="Foto do Carlos Sainz">
+                                <h2 class="resumo__pilotos__titulo">Carlos Sainz</h2>
+                                <p class="resumo__pilotos__nacionalidade">Espanha</p>
+                                <p class="resumo__pilotos__data">Ferrari</p>       
+                                <button class="lightbox-close" onclick="closeLightbox('lightbox5')">Fechar</button>
+                              </div>
+                            </div>
+                        </div>                              
+                    </div>
+                </div>
+
+                <div class="resumo2">
+                    <div class="resumo__pilotos">
+
+                        <div class="resumo__pilotos_card">
+                            <div class="resumo__pilotos_gp" onclick="openLightbox('lightbox6')">
+                                <h2 class="resumo__pilotos__titulo">Lance Stroll</h2>                                         
+                            </div>
+                            <div class="lightbox" id="lightbox6">
+                              <div class="lightbox-content">
+                                    <img src="./assets/pilotos/stroll.jpg" class="fotos_pilotos" alt="Foto do Lance Stroll">
+                                    <h2 class="resumo__pilotos__titulo">Lance Stroll</h2>
+                                    <p class="resumo__pilotos__nacionalidade">Canadá</p>
+                                    <p class="resumo__pilotos__data">Aston Martin</p>      
+                                    <button class="lightbox-close" onclick="closeLightbox('lightbox6')">Fechar</button>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="resumo__pilotos_card">
+                            <div class="resumo__pilotos_gp" onclick="openLightbox('lightbox7')">
+                                <h2 class="resumo__pilotos__titulo">George Russell</h2>                                         
+                            </div>
+                            <div class="lightbox" id="lightbox7">
+                              <div class="lightbox-content">
+                                    <img src="./assets/pilotos/russell.jpg" class="fotos_pilotos" alt="Foto do George Russell">
+                                    <h2 class="resumo__pilotos__titulo">George Russell</h2>
+                                    <p class="resumo__pilotos__nacionalidade">Reino Unido</p>
+                                    <p class="resumo__pilotos__data">Mercedes</p>      
+                                    <button class="lightbox-close" onclick="closeLightbox('lightbox7')">Fechar</button>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="resumo__pilotos_card">
+                            <div class="resumo__pilotos_gp" onclick="openLightbox('lightbox8')">
+                                <h2 class="resumo__pilotos__titulo">Lando Norris</h2>                                        
+                            </div>
+                            <div class="lightbox" id="lightbox8">
+                              <div class="lightbox-content">
+                                    <img src="./assets/pilotos/norris.jpg" class="fotos_pilotos" alt="Foto do Lando Norris">
+                                    <h2 class="resumo__pilotos__titulo">Lando Norris</h2>
+                                    <p class="resumo__pilotos__nacionalidade">Reino Unido</p>
+                                    <p class="resumo__pilotos__data">McLaren</p>        
+                                    <button class="lightbox-close" onclick="closeLightbox('lightbox8')">Fechar</button>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="resumo__pilotos_card">
+                            <div class="resumo__pilotos_gp" onclick="openLightbox('lightbox9')">
+                                <h2 class="resumo__pilotos__titulo">Nico Hulkenbergs</h2>                                       
+                            </div>
+                            <div class="lightbox" id="lightbox9">
+                              <div class="lightbox-content">
+                                    <img src="./assets/pilotos/nico.jpg" class="fotos_pilotos" alt="Foto do Nico Hulkenbergs">
+                                    <h2 class="resumo__pilotos__titulo">Nico Hulkenbergs</h2>
+                                    <p class="resumo__pilotos__nacionalidade">Alemanha</p>
+                                    <p class="resumo__pilotos__data">Haas</p>         
+                                    <button class="lightbox-close" onclick="closeLightbox('lightbox9')">Fechar</button>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="resumo__pilotos_card">
+                            <div class="resumo__pilotos_gp" onclick="openLightbox('lightbox10')">
+                                <h2 class="resumo__pilotos__titulo">Charles Leclerc</h2>                                      
+                            </div>
+                            <div class="lightbox" id="lightbox10">
+                              <div class="lightbox-content">
+                                    <img src="./assets/pilotos/leclerc.jpg" class="fotos_pilotos" alt="Foto do Charles Leclerc">
+                                    <h2 class="resumo__pilotos__titulo">Charles Leclerc</h2>
+                                    <p class="resumo__pilotos__nacionalidade">Mônaco</p>
+                                    <p class="resumo__pilotos__data">Ferrari</p>      
+                                    <button class="lightbox-close" onclick="closeLightbox('lightbox10')">Fechar</button>
+                              </div>
+                            </div>
+                        </div>                           
+                    </div>
+                </div>
+
+                <div class="resumo3">
+                    <div class="resumo__pilotos">
+                        <div class="resumo__pilotos_card">
+                            <div class="resumo__pilotos_gp" onclick="openLightbox('lightbox11')">
+                                <h2 class="resumo__pilotos__titulo">Valtteri Bottas</h2>                                      
+                            </div>
+                            <div class="lightbox" id="lightbox11">
+                              <div class="lightbox-content">
+                                    <img src="./assets/pilotos/bottas.jpg" class="fotos_pilotos" alt="Foto do Valtteri Bottas">
+                                    <h2 class="resumo__pilotos__titulo">Valtteri Bottas</h2>
+                                    <p class="resumo__pilotos__nacionalidade">Finlândia</p>
+                                    <p class="resumo__pilotos__data">Alfa Romeo</p>      
+                                    <button class="lightbox-close" onclick="closeLightbox('lightbox11')">Fechar</button>
+                              </div>
+                            </div>
+                        </div>    
+                        <div class="resumo__pilotos_card">
+                            <div class="resumo__pilotos_gp" onclick="openLightbox('lightbox12')">
+                                <h2 class="resumo__pilotos__titulo">Esteban Ocon</h2>                                      
+                            </div>
+                            <div class="lightbox" id="lightbox12">
+                              <div class="lightbox-content">
+                                    <img src="./assets/pilotos/ocon.jpg" class="fotos_pilotos" alt="Foto do Esteban Ocon">
+                                    <h2 class="resumo__pilotos__titulo">Esteban Ocon</h2>
+                                    <p class="resumo__pilotos__nacionalidade">França</p>
+                                    <p class="resumo__pilotos__data">Alpine</p>   
+                                    <button class="lightbox-close" onclick="closeLightbox('lightbox12')">Fechar</button>
+                              </div>
+                            </div>
+                        </div> 
+                        <div class="resumo__pilotos_card">
+                            <div class="resumo__pilotos_gp" onclick="openLightbox('lightbox13')">
+                                <h2 class="resumo__pilotos__titulo">Oscar Piastri</h2>                                      
+                            </div>
+                            <div class="lightbox" id="lightbox13">
+                              <div class="lightbox-content">
+                                    <img src="./assets/pilotos/oscar.jpg" class="fotos_pilotos" alt="Foto do Oscar Piastri">
+                                    <h2 class="resumo__pilotos__titulo">Oscar Piastri</h2>
+                                    <p class="resumo__pilotos__nacionalidade">Australia</p>
+                                    <p class="resumo__pilotos__data">McLaren</p>   
+                                    <button class="lightbox-close" onclick="closeLightbox('lightbox13')">Fechar</button>
+                              </div>
+                            </div>
+                        </div> 
+                        <div class="resumo__pilotos_card">
+                            <div class="resumo__pilotos_gp" onclick="openLightbox('lightbox14')">
+                                <h2 class="resumo__pilotos__titulo">Pierre Gasly</h2>                                    
+                            </div>
+                            <div class="lightbox" id="lightbox14">
+                              <div class="lightbox-content">
+                                    <img src="./assets/pilotos/gasly.jpg" class="fotos_pilotos" alt="Foto do Pierre Gasly">
+                                    <h2 class="resumo__pilotos__titulo">Pierre Gasly</h2>
+                                    <p class="resumo__pilotos__nacionalidade">França</p>
+                                    <p class="resumo__pilotos__data">Alpine</p>    
+                                    <button class="lightbox-close" onclick="closeLightbox('lightbox14')">Fechar</button>
+                              </div>
+                            </div>
+                        </div> 
+                        <div class="resumo__pilotos_card">
+                            <div class="resumo__pilotos_gp" onclick="openLightbox('lightbox15')">
+                                <h2 class="resumo__pilotos__titulo">Guanyu Zhou</h2>                                   
+                            </div>
+                            <div class="lightbox" id="lightbox15">
+                              <div class="lightbox-content">
+                                    <img src="./assets/pilotos/guanyu.jpg" class="fotos_pilotos" alt="Foto do Guanyu Zhou">
+                                    <h2 class="resumo__pilotos__titulo">Guanyu Zhou</h2>
+                                    <p class="resumo__pilotos__nacionalidade">China</p>
+                                    <p class="resumo__pilotos__data">Alfa Romeo</p>     
+                                    <button class="lightbox-close" onclick="closeLightbox('lightbox15')">Fechar</button>
+                              </div>
+                            </div>
+                        </div>                                                               
+                    </div>
+                </div>
+
+                <div class="resumo4">
+                    <div class="resumo__pilotos">
+
+                        <div class="resumo__pilotos_card">
+                            <div class="resumo__pilotos_gp" onclick="openLightbox('lightbox16')">
+                                <h2 class="resumo__pilotos__titulo">Yuki Tsunoda</h2>                                  
+                            </div>
+                            <div class="lightbox" id="lightbox16">
+                              <div class="lightbox-content">
+                                    <img src="./assets/pilotos/yuki.jpg" class="fotos_pilotos" alt="Foto do Yuki Tsunoda">
+                                     <h2 class="resumo__pilotos__titulo">Yuki Tsunoda</h2>
+                                    <p class="resumo__pilotos__nacionalidade">Japão</p>
+                                    <p class="resumo__pilotos__data">AlphaTauri</p>     
+                                    <button class="lightbox-close" onclick="closeLightbox('lightbox16')">Fechar</button>
+                              </div>
+                            </div>
+                        </div> 
+                        <div class="resumo__pilotos_card">
+                            <div class="resumo__pilotos_gp" onclick="openLightbox('lightbox17')">
+                                <h2 class="resumo__pilotos__titulo">Kevin Magnussen</h2>                                  
+                            </div>
+                            <div class="lightbox" id="lightbox17">
+                              <div class="lightbox-content">
+                                    <img src="./assets/pilotos/kevin.jpg" class="fotos_pilotos" alt="Foto do Kevin Magnussen">
+                                    <h2 class="resumo__pilotos__titulo">Kevin Magnussen</h2>
+                                    <p class="resumo__pilotos__nacionalidade">Dinamarca</p>
+                                    <p class="resumo__pilotos__data">Haas</p>        
+                                    <button class="lightbox-close" onclick="closeLightbox('lightbox17')">Fechar</button>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="resumo__pilotos_card">
+                            <div class="resumo__pilotos_gp" onclick="openLightbox('lightbox18')">
+                                <h2 class="resumo__pilotos__titulo">Alexander Albon</h2>                                
+                            </div>
+                            <div class="lightbox" id="lightbox18">
+                              <div class="lightbox-content">
+                                    <img src="./assets/pilotos/albon.jpg" class="fotos_pilotos" alt="Foto do Alexander Albon">
+                                    <h2 class="resumo__pilotos__titulo">Alexander Albon</h2>
+                                    <p class="resumo__pilotos__nacionalidade">Tailândia</p>
+                                    <p class="resumo__pilotos__data">Williams</p>      
+                                    <button class="lightbox-close" onclick="closeLightbox('lightbox18')">Fechar</button>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="resumo__pilotos_card">
+                            <div class="resumo__pilotos_gp" onclick="openLightbox('lightbox19')">
+                                <h2 class="resumo__pilotos__titulo">Logan Sargeant</h2>                                
+                            </div>
+                            <div class="lightbox" id="lightbox19">
+                              <div class="lightbox-content">
+                                    <img src="./assets/pilotos/logan.jpg" class="fotos_pilotos" alt="Foto do Logan Sargeant">
+                                    <h2 class="resumo__pilotos__titulo">Logan Sargeant</h2>
+                                    <p class="resumo__pilotos__nacionalidade">Estados Unidos</p>
+                                    <p class="resumo__pilotos__data">Williams</p>     
+                                    <button class="lightbox-close" onclick="closeLightbox('lightbox19')">Fechar</button>
+                              </div>
+                            </div>
+                        </div>                                              
+                        <div class="resumo__pilotos_card">
+                            <div class="resumo__pilotos_gp" onclick="openLightbox('lightbox20')">
+                                <h2 class="resumo__pilotos__titulo">Nyck de Vries</h2>                              
+                            </div>
+                            <div class="lightbox" id="lightbox20">
+                              <div class="lightbox-content">
+                                    <img src="./assets/pilotos/nyck.jpg" class="fotos_pilotos" alt="Foto do Nyck de Vries">
+                                    <h2 class="resumo__pilotos__titulo">Nyck de Vries</h2>
+                                    <p class="resumo__pilotos__nacionalidade">Holanda</p>
+                                    <p class="resumo__pilotos__data">AlphaTauri</p>    
+                                    <button class="lightbox-close" onclick="closeLightbox('lightbox20')">Fechar</button>
+                              </div>
+                            </div>
+                        </div>                                                                        
+                    </div>
+                </div>
+            </section>
+
+            <section class="sessao2" id="pilotos">
+                <h2 class="carros__carrossel__titulo">Carros de 2023</h2>
+            </section>             
+
+            <section class="sessao3" id="carros">
+                    <div class="swiper">
+                      <!-- Additional required wrapper -->
+                      <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <img src="./assets/carros/ferrari.webp" class="carros__carrossel__fotos" alt="Carro da Ferrari">
+                            <h2 class="carros__carrossel__fotos__titulo">Ferrari</h2>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/carros/redbull.webp" class="carros__carrossel__fotos" alt="Carro da Redbull">
+                            <h2 class="carros__carrossel__fotos__titulo">Redbull</h2>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/carros/mercedes.webp" class="carros__carrossel__fotos" alt="Carro da Mercedes">
+                            <h2 class="carros__carrossel__fotos__titulo">Mercedes</h2>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="./assets/carros/williams.webp" class="carros__carrossel__fotos" alt="Carro da Williams">
+                            <h2 class="carros__carrossel__fotos__titulo">Williams</h2>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/carros/tauri.webp" class="carros__carrossel__fotos" alt="Carro da Tauri">
+                            <h2 class="carros__carrossel__fotos__titulo">AlphaTauri</h2>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/carros/romeo.webp" class="carros__carrossel__fotos" alt="Carro da Alfa Romeo">
+                            <h2 class="carros__carrossel__fotos__titulo">Alfa Romeo</h2>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="./assets/carros/martin.webp" class="carros__carrossel__fotos" alt="Carro da Aston Martin">
+                            <h2 class="carros__carrossel__fotos__titulo">Aston Martin</h2>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/carros/maclaren.webp" class="carros__carrossel__fotos" alt="Carro da Mclaren">
+                            <h2 class="carros__carrossel__fotos__titulo">Mclaren</h2>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/carros/haas.webp" class="carros__carrossel__fotos" alt="Carro da Haas">
+                            <h2 class="carros__carrossel__fotos__titulo">Haas</h2>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="./assets/carros/aupini.webp" class="carros__carrossel__fotos" alt="Carro da Aupini">
+                            <h2 class="carros__carrossel__fotos__titulo">Aupini</h2>
+                        </div>
+
+                      </div>
+                      <!-- If we need pagination -->
+                      <div class="swiper-pagination"></div>
+
+                      <!-- If we need navigation buttons -->
+                      <div class="swiper-button-prev"></div>
+                      <div class="swiper-button-next"></div>
+
+                    </div>
+
+            </section>
+
+        </main>
+
+        <footer class="rodape">
+            <h4>Cardoso - 2023</h4>
+            <p>Desenvolvido com ❤️ em Porto Alegre</p>
+            <a href="https://github.com/cardosodeveloper" class="rodape__botao__dev">Acesse meu GitHub</a>
+        </footer>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>   
+
+        <script src="./js/script.js"></script>
+
+
+    </body>
+</html>
